@@ -1,5 +1,3 @@
-
-
 function playSpotify() {
     const linkInput = document.getElementById("spotifyLink").value.trim();
     const playerContainer = document.getElementById("playerContainer");
