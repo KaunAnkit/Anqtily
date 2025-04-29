@@ -29,6 +29,8 @@ function playSpotify() {
                 allow="encrypted-media">
         </iframe>
     `;
+    document.getElementById("spotifyLink").value = "";
+
 }
 
 
