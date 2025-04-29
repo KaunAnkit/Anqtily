@@ -30,7 +30,6 @@ function playSpotify() {
         </iframe>
     `;
     document.getElementById("spotifyLink").value = "";
-
 }
 
 
