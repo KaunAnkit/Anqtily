@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    width: 100%;
 }
 .Logo img{
     height: 60px;
@@ -52,9 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     padding: 34px;
-
     background-image: url('https://KaunAnkit.github.io/Anqtily/Photos/Back2.gif');
     background-size: contain;      
     background-repeat: no-repeat;   
@@ -78,26 +77,50 @@
 
 
 .spotifyInput {
+    margin-left: auto;
     display: flex;
-    gap: 10px;
-    padding: 0 0 0 220px; ;
+    align-items: center;
+    gap: 0;
+    background-color: #1c1c1c;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 3px;
+    height: 42px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
 .spotifyInput input {
-    padding: 6px;
-    border-radius: 5px;
+    padding: 10px 16px;
     border: none;
-    width: 200px;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    color: #ffffff;
+    width: 240px;
+    flex: 1;
+}
+
+.spotifyInput input::placeholder {
+    color: #aaa;
+    font-style: italic;
 }
 
 .spotifyInput button {
-    padding: 6px 12px;
-    background-color: #1DB954;
+    padding: 0 18px;
+    background-color: #ce9c57;
     color: white;
     border: none;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 0 30px 30px 0;
     cursor: pointer;
+    height: 100%;
+    transition: background-color 0.3s ease;
 }
+
+.spotifyInput button:hover {
+    background-color: #1aa34a;
+}
+
 
 
 #playerContainer {
