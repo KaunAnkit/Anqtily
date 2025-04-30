@@ -1,8 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .Header{
     display: flex;
@@ -24,13 +26,12 @@
 }
 .brandName{
     text-transform: uppercase;
-    color: #d3d3d3;
+    color: #cb8c32;
     letter-spacing: 0.05em;
     font-size: 1.8em;
     font-weight: 700;
     margin-right: 20px;
 }
-
 .navBar{
     display: flex;
     min-width: 500px;
@@ -45,22 +46,21 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+
 .container {
-    position: relative;
-    flex: 1;
-    font-family: 'Varela Round', sans-serif;
-    color: black;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 34px;
-    background-image: url('https://KaunAnkit.github.io/Anqtily/Photos/Back2.gif');
-    background-size: contain;      
-    background-repeat: no-repeat;   
-    background-position: center;    
-    background-color: black;         
+    background-image: url('/Photos/Back2.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
     min-height: calc(100vh - 160px);
-    padding-bottom: 120px; 
+    padding-bottom: 120px;
+    gap: 20px;
 }
 
 
@@ -122,7 +122,6 @@
 }
 
 
-
 #playerContainer {
     width: 90%;
     max-width: 600px;
@@ -133,3 +132,126 @@
     z-index: 1000;
 }
 
+
+.playlistPanel {
+    position: absolute;
+    top: 13%;
+    left: 0%;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+
+.playlistInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.playlistInputs input,
+.playlistInputs button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1c1c1c;
+}
+
+#playlistList li {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#playlistList li div.playlist-name {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 6px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#playlistList li div.playlist-controls {
+    display: flex;
+    gap: 10px;
+}
+#playlistList {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.playlistInputs button {
+    background-color: #ce9c57;
+    color: white;
+}
+
+.playlistInputs button:hover {
+    background-color: #1aa34a;
+}
+
+
+.playlist-controls button:first-child {
+    background-color: #1db954; 
+    color: white;
+}
+
+.playlist-controls button:first-child:hover {
+    background-color: #1aa34a;
+}
+
+
+.playlist-controls button:last-child {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.playlist-controls button:last-child:hover {
+    background-color: #c0392b;
+}
+
+
+#playlistList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#playlistList::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.playlistPanel h2{
+    padding: 0px 10px 13px 0px;
+    color: #ce9c57;
+}
