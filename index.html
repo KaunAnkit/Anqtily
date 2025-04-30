@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>ANQITLY</title>
+    <title>QITLY</title>
 </head>
 <body>
     
@@ -13,11 +13,11 @@
         <div class="Brand">
             <div class="Logo">
                 <a href="#">
-                    <img src="https://KaunAnkit.github.io/Anqtily/Photos/BalackLogo.png" alt="Logo">
+                    <img src="/Photos/Logo.png" alt="Logo">
                 </a>
             </div>     
         <div class="brandName">
-                ANQITLY
+                QITLY
         </div>
         <nav class="navBar">
             <a href="#">Home</a>
@@ -32,12 +32,20 @@
     </header>
     <main>
         <div class="container">
+            <div class="playlistPanel">
+                <h2><i>Your Playlists</i></h2>
+                    <div class="playlistInputs">
+                    <input type="text" id="savePlaylistName" placeholder="Playlist Name">
+                    <input type="text" id="savePlaylistInput" placeholder="Playlist URL">
+                    <button onclick="savePlaylist()">Save Playlist</button>
+                </div>
+                <ul id="playlistList"></ul> 
             </div>
+            
             <div class="SongBanner"></div>
         </div>
         
-        <div class="bottom" >
-            
+        <div class="bottom">
             <div id="playerContainer"></div>    
         </div>
         
